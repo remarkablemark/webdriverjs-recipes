@@ -9,6 +9,7 @@
     "testing"
   ],
   "dependencies": {
+    "mocha": "^3.0.2",
     "selenium-webdriver": "^2.53.3"
   },
   "license": "MIT"
