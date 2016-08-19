@@ -8,5 +8,8 @@
     "selenium",
     "testing"
   ],
+  "dependencies": {
+    "selenium-webdriver": "^2.53.3"
+  },
   "license": "MIT"
 }
