@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dynamic Fixture</title>
+    </head>
+    <body>
+        <ul>
+            <li id="replace">initial</li>
+            <li id="text"></li>
+            <li id="element"></li>
+        </ul>
+
+        <script>
+            /**
+             * Pretend to load HTML in element with timeout.
+             *
+             * @param {String}      html    - The HTML.
+             * @param {HTMLElement} element - The element.
+             * @param {Number}      timeout - The timeout in milliseconds.
+             */
+            function load(html, element, timeout) {
+                window.setTimeout(function() {
+                    element.innerHTML = html;
+                }, timeout);
+            }
+
+            /**
+             * Generate random integer within range.
+             *
+             * @param  {Number} min - The minimum.
+             * @param  {Number} max - The maximum.
+             * @return {Number}     - The random integer.
+             */
+            function random(min, max) {
+                return Math.floor(Math.random() * max - min) + min;
+            }
+
+            // constants
+            var MIN = 300;
+            var MAX = 1000;
+
+            // pretend to load dynamically
+            load('text', document.getElementById('text'), random(MIN, MAX));
+            load('<span id="element-child">element<\/span>', document.getElementById('element'), random(MIN, MAX));
+            load('replace', document.getElementById('replace'), random(MIN, MAX));
+        </script>
+    </body>
+</html>
