@@ -15,20 +15,21 @@ var assert = require('assert');
 test.describe('Sample test', function() {
     // you may want to set a timeout for your mocha tests
     this.timeout(5000); // in milliseconds
+    var driver;
 
     // setup
     test.before(function() {
-        this.driver = new webdriver.Builder().forBrowser('firefox').build();
+        driver = require('./build-driver');
     });
 
     // teardown
     test.after(function() {
-        this.driver.quit();
+        driver.quit();
     });
 
     test.it('should open Google', function(done) {
-        this.driver.get('https://www.google.com');
-        this.driver.getTitle().then(function(title) {
+        driver.get('https://www.google.com');
+        driver.getTitle().then(function(title) {
             assert.equal(title, 'Google');
             done();
         });
