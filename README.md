@@ -18,6 +18,12 @@ Build a driver:
 $ node recipes/build-driver
 ```
 
+Launch a specified Chrome profile:
+
+```sh
+$ node recipes/chrome-profile
+```
+
 Run tests with [Mocha](https://mochajs.org):
 
 ```sh
