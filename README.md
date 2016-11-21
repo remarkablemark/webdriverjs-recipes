@@ -24,6 +24,12 @@ Launch a specified Chrome profile:
 $ node recipes/chrome-profile
 ```
 
+Take a screenshot:
+
+```sh
+$ node recipes/take-screenshot
+```
+
 Run tests with [Mocha](https://mochajs.org):
 
 ```sh
