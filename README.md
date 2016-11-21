@@ -18,6 +18,12 @@ Build a driver:
 $ node recipes/build-driver
 ```
 
+Build a driver with a different browser (given driver is installed):
+
+```sh
+$ SELENIUM_BROWSER=chrome node recipes/build-driver
+```
+
 Launch a specified Chrome profile:
 
 ```sh
