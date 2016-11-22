@@ -36,6 +36,12 @@ Find element(s):
 $ node recipes/find
 ```
 
+Wait until a condition is true:
+
+```sh
+$ node recipes/wait-until
+```
+
 Take a screenshot:
 
 ```sh
