@@ -30,6 +30,12 @@ Launch a specified Chrome profile:
 $ node recipes/chrome-profile
 ```
 
+Find element(s):
+
+```sh
+$ node recipes/find
+```
+
 Take a screenshot:
 
 ```sh
