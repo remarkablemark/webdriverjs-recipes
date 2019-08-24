@@ -9,8 +9,8 @@
     "testing"
   ],
   "dependencies": {
-    "mocha": "^3.0.2",
-    "selenium-webdriver": "^2.53.3"
+    "mocha": "^6.2.0",
+    "selenium-webdriver": "^3.6.0"
   },
   "license": "MIT"
 }
