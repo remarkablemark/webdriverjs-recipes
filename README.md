@@ -33,6 +33,12 @@ Build driver with specified browser:
 $ SELENIUM_BROWSER=chrome npm run build-driver
 ```
 
+Check if element exists:
+
+```sh
+$ npm run check-element-exists
+```
+
 Launch Chrome profile:
 
 ```sh
