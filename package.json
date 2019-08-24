@@ -3,11 +3,6 @@
   "version": "0.0.0",
   "description": "Recipes for using WebDriverJS (Selenium for Node.js).",
   "author": "Mark <mark@remarkablemark.org>",
-  "keywords": [
-    "webdriverjs",
-    "selenium",
-    "testing"
-  ],
   "dependencies": {
     "mocha": "^6.2.0",
     "selenium-webdriver": "^3.6.0"
