@@ -1,38 +1,26 @@
-'use strict';
+// WebDriverJS testing methods must be used instead of mocha methods due to async
+const { after, before, describe, it } = require('selenium-webdriver/testing');
+const assert = require('assert');
 
-/**
- * Module dependencies.
- */
-var webdriver = require('selenium-webdriver');
-// instead of using global mocha methods like `describe` and `it`,
-// you must use the WebDriverJS testing module because of async
-var test = require('selenium-webdriver/testing');
-var assert = require('assert');
+describe('WebDriverJS', function() {
+  this.timeout(5000); // in milliseconds
+  let driver;
 
-/**
- * Test suite.
- */
-test.describe('Sample test', function() {
-    // you may want to set a timeout for your mocha tests
-    this.timeout(5000); // in milliseconds
-    var driver;
+  // setup
+  before(() => {
+    driver = require('./build-driver');
+  });
 
-    // setup
-    test.before(function() {
-        driver = require('./build-driver');
+  // teardown
+  after(() => {
+    driver.quit();
+  });
+
+  it('opens Google', done => {
+    driver.get('https://www.google.com');
+    driver.getTitle().then(title => {
+      assert.equal(title, 'Google');
+      done();
     });
-
-    // teardown
-    test.after(function() {
-        driver.quit();
-    });
-
-    test.it('should open Google', function(done) {
-        driver.get('https://www.google.com');
-        driver.getTitle().then(function(title) {
-            assert.equal(title, 'Google');
-            done();
-        });
-    });
-
+  });
 });
