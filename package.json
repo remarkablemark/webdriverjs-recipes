@@ -3,6 +3,14 @@
   "version": "0.0.0",
   "description": "Recipes for using WebDriverJS (Selenium for Node.js).",
   "author": "Mark <mark@remarkablemark.org>",
+  "scripts": {
+    "build-driver": "node recipes/build-driver",
+    "chrome-profile": "node recipes/chrome-profile",
+    "find": "node recipes/find",
+    "take-screenshot": "node recipes/take-screenshot",
+    "testing-with-mocha": "mocha recipes/testing-with-mocha",
+    "wait-until": "node recipes/wait-until"
+  },
   "dependencies": {
     "mocha": "^6.2.0",
     "selenium-webdriver": "^3.6.0"
