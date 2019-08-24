@@ -15,5 +15,9 @@
     "mocha": "^6.2.0",
     "selenium-webdriver": "^3.6.0"
   },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=6"
+  },
   "license": "MIT"
 }
