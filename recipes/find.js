@@ -79,27 +79,3 @@ element = driver.wait(
 element.getText().then(text => {
   console.log('getText:', text);
 });
-
-/**
- * `findElement` throws `NoSuchElementError`
- */
-driver.findElement({ className: 'nonexistent-class' }).catch(error => {
-  if (error.name === 'NoSuchElementError') {
-    console.log('findElement:', error.message);
-  }
-});
-
-driver.findElement({ className: 'nonexistent-class' }).then(null, error => {
-  if (error.name === 'NoSuchElementError') {
-    console.log('findElement:', error.message);
-  }
-});
-
-/**
- * `findElements` length is 0
- */
-driver.findElements({ className: 'nonexistent-class' }).then(elements => {
-  if (!elements.length) {
-    console.log('findElements:', elements);
-  }
-});
