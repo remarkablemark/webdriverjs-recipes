@@ -1,29 +1,15 @@
-'use strict';
+const { Builder } = require('selenium-webdriver');
+const { Options } = require('selenium-webdriver/chrome');
 
-/**
- * Module dependencies.
- */
-var webdriver = require('selenium-webdriver');
-var chrome = require('selenium-webdriver/chrome');
+const chromeOptions = new Options()
+  // replace `my_profile_path`
+  .addArguments('--user-data-dir=my_profile_path');
 
-/**
- * Chrome options.
- */
-var options = new chrome.Options();
-var PROFILE_PATH = 'path_to_profile';
-options.addArguments('user-data-dir=' + PROFILE_PATH);
+const driver = new Builder()
+  .forBrowser('chrome')
+  .setChromeOptions(chromeOptions)
+  .build();
 
-/**
- * Build driver.
- */
-var builder = new webdriver.Builder();
-builder.forBrowser('chrome');
-builder.setChromeOptions(options);
-
-var driver = builder.build();
 driver.get('chrome://version');
 
-/**
- * Export driver.
- */
 module.exports = driver;
