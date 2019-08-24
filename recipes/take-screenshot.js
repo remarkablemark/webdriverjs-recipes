@@ -1,25 +1,24 @@
-'use strict';
+const { writeFile } = require('fs');
+const driver = require('./build-driver');
+
+const url =
+  'http://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#takeScreenshot';
+driver.get(url);
 
 /**
- * Module dependencies.
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#takeScreenshot}
  */
-var fs = require('fs');
-var driver = require('./build-driver');
+driver.takeScreenshot().then(data => {
+  data = data.replace('data:image/png;base64', '');
+  const filename = 'screenshot.png';
 
-driver.get('http://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#takeScreenshot');
-
-/**
- * Take screenshot.
- */
-driver.takeScreenshot().then(function(data) {
-    data = data.replace('data:image/png;base64', '');
-    var filename = 'screenshot.png';
-
-    // https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback
-    fs.writeFile(filename, data, 'base64', function(error) {
-        if (error) throw error;
-        console.log('Screenshot saved to:', filename);
-    });
+  /**
+   * {@link https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback}
+   */
+  writeFile(filename, data, 'base64', error => {
+    if (error) throw error;
+    console.log('Screenshot saved to:', filename);
+  });
 });
 
 driver.quit();
