@@ -1,6 +1,15 @@
 # WebDriverJS Recipes
 
-A collection of useful recipes for using [WebDriverJS](https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs), which is [Selenium](http://www.seleniumhq.org) for [Node.js](https://nodejs.org).
+Recipes and examples of how to perform automation with [WebDriverJS](https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs) ([Selenium](https://www.seleniumhq.org/) for [Node.js](https://nodejs.org/)).
+
+See [API documentation](https://seleniumhq.github.io/selenium/docs/api/javascript/index.html) for more information on [selenium-webdriver](https://www.npmjs.com/package/selenium-webdriver).
+
+## Prerequisites
+
+- [Node.js 8+](https://nodejs.org/en/download/) and [npm 6+](https://www.npmjs.com/get-npm)
+- Browsers
+  - [Chrome](https://www.google.com/chrome/) and [ChromeDriver](https://chromedriver.chromium.org/downloads)
+  - [Firefox](https://www.mozilla.org/en-US/firefox/new/) and [geckodriver](https://github.com/mozilla/geckodriver/releases)
 
 ## Install
 
@@ -10,50 +19,50 @@ $ cd webdriverjs-recipes
 $ npm install
 ```
 
-## Recipes
+## Scripts
 
-Build a driver:
+Build driver:
 
 ```sh
-$ node recipes/build-driver
+$ npm run build-driver
 ```
 
-Build a driver with a different browser (given driver is installed):
+Build driver with specified browser:
 
 ```sh
-$ SELENIUM_BROWSER=chrome node recipes/build-driver
+$ SELENIUM_BROWSER=chrome npm run build-driver
 ```
 
-Launch a specified Chrome profile:
+Launch Chrome profile:
 
 ```sh
-$ node recipes/chrome-profile
+$ npm run chrome-profile
 ```
 
 Find element(s):
 
 ```sh
-$ node recipes/find
+$ npm run find
 ```
 
 Wait until a condition is true:
 
 ```sh
-$ node recipes/wait-until
+$ npm run wait-until
 ```
 
-Take a screenshot:
+Take screenshot:
 
 ```sh
-$ node recipes/take-screenshot
+$ npm run take-screenshot
 ```
 
-Run tests with [Mocha](https://mochajs.org):
+Run tests with [Mocha](https://mochajs.org/):
 
 ```sh
-$ mocha recipes/testing-with-mocha
+$ npm run testing-with-mocha
 ```
 
 ## License
 
-[MIT](https://github.com/remarkablemark/webdriverjs-recipes/blob/master/LICENSE)
+[MIT](LICENSE)
