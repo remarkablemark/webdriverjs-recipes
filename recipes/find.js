@@ -1,74 +1,105 @@
-'use strict';
+const { By, Key, until } = require('selenium-webdriver');
+const driver = require('./build-driver');
+
+const url =
+  'https://seleniumhq.github.io/selenium/docs/api/javascript/index.html';
+driver.get(url);
 
 /**
- * Module dependencies.
+ * `findElement` with `By.tagName`
+ *
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#findElement}
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_By.html}
  */
-var webdriver = require('selenium-webdriver');
-var driver = require('./build-driver');
-
-driver.get('http://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#findElement');
-
-/**
- * Find (first) element.
- */
-// method 1: using webdriver.By
-driver.findElement(webdriver.By.tagName('h1'))
-    .then(function(element) {
-        element.getTagName().then(function(tagName) {
-            console.log(tagName);
-        });
-    });
-
-// method 2: using webdriver.By.Hash
-driver.findElement({ tagName: 'h1' })
-    .getAttribute('outerHTML')
-    .then(function(html) {
-        console.log(html);
-    });
-
-/**
- * Find elements.
- */
-driver.findElements({ css: 'h2' })
-    .then(function(elements) {
-        // elements is an array of WebElements
-        console.log(elements.map(function(element) {
-            return element.constructor;
-        }));
-    });
-
-/**
- * Wait then find (for elements that have not loaded yet).
- */
-var element = driver.wait(
-    webdriver.until.elementLocated({ xpath: '/html/body' }),
-    300 // delay in milliseconds
+driver.findElement(By.tagName('h1')).then(element =>
+  element.getTagName().then(tagName => {
+    console.log('findElement By.tagName:', tagName);
+  }),
 );
 
 /**
- * Find element within element.
+ * `findElement` by hash object
  */
-element.findElement({ css: '#findElement > .header > .name' })
-    .getText()
-    .then(function(text) {
-        console.log(text);
-    });
+driver
+  .findElement({ tagName: 'h1' })
+  .getAttribute('outerHTML')
+  .then(html => {
+    console.log('findElement By.Hash:', html);
+  });
 
 /**
- * Element not found.
+ * `findElements` by hash object
+ *
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#findElements}
  */
-// method 1: catch error NoSuchElementError
-driver.findElement({ className: 'no-such-element' })
-    .then(null, function(error) {
-        if (error.name === 'NoSuchElementError') {
-            console.log('Unable to find element');
-        }
-    });
+driver.findElements({ css: 'h2' }).then(elements => {
+  // returns `WebElements[]`
+  console.log(
+    'findElements By.Hash:',
+    elements.map(element => element.constructor),
+  );
+});
 
-// method 2: length is zero
-driver.findElements({ id: 'not-found' })
-    .then(function(elements) {
-        if (elements.length === 0) {
-            console.log('No elements found');
-        }
-    });
+/**
+ * `wait` and `util.elementLocated`
+ *
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#wait}
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/until.html}
+ */
+let element = driver.wait(
+  until.elementLocated({ xpath: '//input[@type="search"]' }),
+  500, // delay in milliseconds
+);
+
+/**
+ * `sendKeys`
+ *
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#sendKeys}
+ */
+element.sendKeys('findElement');
+
+/**
+ * `sleep`
+ *
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#sleep}
+ */
+driver.sleep(300);
+
+element.sendKeys(Key.ENTER);
+element = driver.wait(
+  until.elementLocated({ css: '#findElement > .header > .name' }),
+  500, // delay in milliseconds
+);
+
+/**
+ * `getText`
+ *
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#getText}
+ */
+element.getText().then(text => {
+  console.log('getText:', text);
+});
+
+/**
+ * `findElement` throws `NoSuchElementError`
+ */
+driver.findElement({ className: 'nonexistent-class' }).catch(error => {
+  if (error.name === 'NoSuchElementError') {
+    console.log('findElement:', error.message);
+  }
+});
+
+driver.findElement({ className: 'nonexistent-class' }).then(null, error => {
+  if (error.name === 'NoSuchElementError') {
+    console.log('findElement:', error.message);
+  }
+});
+
+/**
+ * `findElements` length is 0
+ */
+driver.findElements({ className: 'nonexistent-class' }).then(elements => {
+  if (!elements.length) {
+    console.log('findElements:', elements);
+  }
+});
