@@ -1,18 +1,5 @@
-'use strict';
+const { Builder } = require('selenium-webdriver');
 
-/**
- * Module dependencies.
- */
-var webdriver = require('selenium-webdriver');
+const driver = new Builder().forBrowser('firefox').build();
 
-/**
- * Build driver.
- */
-var builder = new webdriver.Builder();
-builder.forBrowser('firefox');
-var driver = builder.build();
-
-/**
- * Export driver.
- */
 module.exports = driver;
