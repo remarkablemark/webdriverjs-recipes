@@ -4,6 +4,7 @@
   "description": "Recipes for using WebDriverJS (Selenium for Node.js).",
   "author": "Mark <mark@remarkablemark.org>",
   "scripts": {
+    "async-await": "node recipes/async-await",
     "build-driver": "node recipes/build-driver",
     "check-element-exists": "node recipes/check-element-exists",
     "chrome-profile": "node recipes/chrome-profile",
