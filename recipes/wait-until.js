@@ -1,42 +1,52 @@
-'use strict';
-
-/**
- * Module dependencies.
- */
-var webdriver = require('selenium-webdriver');
-var until = webdriver.until;
 process.env.SELENIUM_BROWSER = 'chrome';
-var driver = require('./build-driver');
 
-driver.get('http://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#wait');
+const { Key, until } = require('selenium-webdriver');
+const driver = require('./build-driver');
 
-driver.findElement({ css: 'input' }).sendKeys('until');
+const url =
+  'https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#wait';
+driver.get(url);
 
 /**
- * Wait until element is located.
+ * `wait` and `util.elementLocated`
+ *
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#wait}
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/until.html}
  */
-var element = driver.wait(
-    until.elementLocated({ css: '.ac-row' }),
-    1000 // delay in milliseconds
+element = driver.wait(
+  until.elementLocated({ css: 'input' }),
+  1000, // delay in milliseconds
 );
 
-element.click();
+/**
+ * `sendKeys`
+ *
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#sendKeys}
+ */
+element.sendKeys('until');
 
-driver.getCurrentUrl().then(function(url) {
-    console.log(url);
+driver.wait(
+  until.elementLocated({
+    xpath: '//div[@class="ac-renderer" and @aria-expanded="true"]',
+  }),
+  1000,
+);
+
+element.sendKeys(Key.ENTER);
+
+driver.getCurrentUrl().then(url => {
+  console.log('getCurrentUrl:', url);
 });
 
 /**
- * Wait until custom condition.
+ * `getCurrentUrl`
+ *
+ * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#getCurrentUrl}
  */
-driver.wait(function() {
-    return driver.getCurrentUrl().then(function(url) {
-        return /until/.test(url);
-    });
-}, 1000);
+driver.wait(() => driver.getCurrentUrl().then(url => /until/.test(url)), 1000);
 
-driver.getCurrentUrl().then(function(url) {
-    console.log(url);
+driver.getCurrentUrl().then(url => {
+  console.log('getCurrentUrl:', url);
 });
 
 driver.quit();

@@ -1,4 +1,4 @@
-const { By, Key, until } = require('selenium-webdriver');
+const { By } = require('selenium-webdriver');
 const driver = require('./build-driver');
 
 const url =
@@ -41,41 +41,27 @@ driver.findElements({ css: 'h2' }).then(elements => {
 });
 
 /**
- * `wait` and `util.elementLocated`
- *
- * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#wait}
- * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/until.html}
+ * `findElement` throws `NoSuchElementError`
  */
-let element = driver.wait(
-  until.elementLocated({ xpath: '//input[@type="search"]' }),
-  500, // delay in milliseconds
-);
-
-/**
- * `sendKeys`
- *
- * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#sendKeys}
- */
-element.sendKeys('findElement');
-
-/**
- * `sleep`
- *
- * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#sleep}
- */
-driver.sleep(300);
-
-element.sendKeys(Key.ENTER);
-element = driver.wait(
-  until.elementLocated({ css: '#findElement > .header > .name' }),
-  500, // delay in milliseconds
-);
-
-/**
- * `getText`
- *
- * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#getText}
- */
-element.getText().then(text => {
-  console.log('getText:', text);
+driver.findElement({ className: 'nonexistent-class' }).catch(error => {
+  if (error.name === 'NoSuchElementError') {
+    console.log('findElement:', error.message);
+  }
 });
+
+driver.findElement({ className: 'nonexistent-class' }).then(null, error => {
+  if (error.name === 'NoSuchElementError') {
+    console.log('findElement:', error.message);
+  }
+});
+
+/**
+ * `findElements` length is 0
+ */
+driver.findElements({ className: 'nonexistent-class' }).then(elements => {
+  if (!elements.length) {
+    console.log('findElements:', elements);
+  }
+});
+
+driver.quit();
