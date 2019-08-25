@@ -57,7 +57,13 @@ Find element(s):
 $ npm run find
 ```
 
-Wait until a condition is true:
+Script written with [promise manager](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/promise.html):
+
+```js
+$ npm run promise-manager
+```
+
+Wait until condition is true:
 
 ```sh
 $ npm run wait-until
