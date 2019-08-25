@@ -21,6 +21,12 @@ $ npm install
 
 ## Scripts
 
+Script written with [async/await](https://javascript.info/async-await):
+
+```js
+$ npm run async-await
+```
+
 Build driver:
 
 ```sh
