@@ -8,7 +8,7 @@ describe('WebDriverJS', function() {
 
   // setup
   before(() => {
-    driver = require('./build-driver');
+    driver = require('../build-driver');
   });
 
   // teardown
