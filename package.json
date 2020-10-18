@@ -1,6 +1,5 @@
 {
   "name": "webdriverjs-recipes",
-  "version": "0.0.0",
   "description": "Recipes for using WebDriverJS (Selenium for Node.js).",
   "author": "Mark <mark@remarkablemark.org>",
   "scripts": {
@@ -23,5 +22,6 @@
     "node": ">=8",
     "npm": ">=6"
   },
+  "private": true,
   "license": "MIT"
 }
