@@ -27,13 +27,13 @@ Script written with [async/await](https://javascript.info/async-await):
 $ npm run async-await
 ```
 
-Build driver:
+Build driver with Firefox browser:
 
 ```sh
 $ npm run build-driver
 ```
 
-Build driver with specified browser:
+Build driver with Chrome browser:
 
 ```sh
 $ SELENIUM_BROWSER=chrome npm run build-driver
@@ -45,7 +45,7 @@ Check if element exists:
 $ npm run check-element-exists
 ```
 
-Launch Chrome profile:
+[Launch Chrome profile](https://remarkablemark.org/blog/2016/11/27/webdriverjs-chrome-profile/):
 
 ```sh
 $ npm run chrome-profile
