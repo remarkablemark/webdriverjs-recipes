@@ -109,7 +109,7 @@ yarn screenshot
 Run tests with [Mocha](https://mochajs.org/):
 
 ```sh
-yarn testing-with-mocha
+yarn mocha
 ```
 
 ## License

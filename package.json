@@ -9,7 +9,7 @@
     "find": "node recipes/find",
     "promise-manager": "node recipes/promise-manager",
     "screenshot": "node recipes/screenshot",
-    "testing-with-mocha": "mocha recipes/testing-with-mocha",
+    "mocha": "mocha recipes/mocha",
     "wait-until": "node recipes/wait-until"
   },
   "engines": {

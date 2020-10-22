@@ -1,5 +1,5 @@
 {
-  "name": "testing-with-mocha",
+  "name": "mocha",
   "version": "0.0.0",
   "dependencies": {
     "mocha": "^6.2.0",
