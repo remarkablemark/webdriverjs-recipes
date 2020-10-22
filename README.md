@@ -9,45 +9,45 @@ See [API documentation](https://seleniumhq.github.io/selenium/docs/api/javascrip
 [Node.js 8+](https://nodejs.org/en/download/):
 
 ```sh
-$ brew install node
+brew install node
 ```
 
 [Yarn 1+](https://classic.yarnpkg.com/en/docs/install/):
 
 ```sh
-$ brew install yarn
+brew install yarn
 ```
 
 [Chrome](https://www.google.com/chrome/):
 
 ```sh
-$ brew cask install google-chrome
+brew cask install google-chrome
 ```
 
 [ChromeDriver](https://chromedriver.chromium.org/downloads):
 
 ```sh
-$ brew install chromedriver
+brew install chromedriver
 ```
 
 [Firefox](https://www.mozilla.org/en-US/firefox/new/):
 
 ```sh
-$ brew cask install firefox
+brew cask install firefox
 ```
 
 [geckodriver](https://github.com/mozilla/geckodriver/releases):
 
 ```sh
-$ brew cask install geckodriver
+brew cask install geckodriver
 ```
 
 ## Install
 
 ```sh
-$ git clone https://github.com/remarkablemark/webdriverjs-recipes.git
-$ cd webdriverjs-recipes
-$ yarn
+git clone https://github.com/remarkablemark/webdriverjs-recipes.git
+cd webdriverjs-recipes
+yarn
 ```
 
 ## Scripts
@@ -55,61 +55,61 @@ $ yarn
 Using [async/await](https://javascript.info/async-await):
 
 ```js
-$ yarn async-await
+yarn async-await
 ```
 
 Build driver with Firefox browser:
 
 ```sh
-$ yarn build-driver
+yarn build-driver
 ```
 
 Build driver with Chrome browser:
 
 ```sh
-$ SELENIUM_BROWSER=chrome yarn build-driver
+SELENIUM_BROWSER=chrome yarn build-driver
 ```
 
 Check if element exists:
 
 ```sh
-$ yarn check-element-exists
+yarn check-element-exists
 ```
 
 [Launch Chrome profile](https://remarkablemark.org/blog/2016/11/27/webdriverjs-chrome-profile/):
 
 ```sh
-$ yarn chrome-profile
+yarn chrome-profile
 ```
 
 Find element(s):
 
 ```sh
-$ yarn find
+yarn find
 ```
 
 Using the [promise manager](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/promise.html):
 
 ```js
-$ yarn promise-manager
+yarn promise-manager
 ```
 
 Wait until condition is true:
 
 ```sh
-$ yarn wait-until
+yarn wait-until
 ```
 
 Take a screenshot:
 
 ```sh
-$ yarn take-screenshot
+yarn take-screenshot
 ```
 
 Run tests with [Mocha](https://mochajs.org/):
 
 ```sh
-$ yarn testing-with-mocha
+yarn testing-with-mocha
 ```
 
 ## License
