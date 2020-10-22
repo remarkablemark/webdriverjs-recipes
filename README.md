@@ -6,79 +6,110 @@ See [API documentation](https://seleniumhq.github.io/selenium/docs/api/javascrip
 
 ## Prerequisites
 
-- [Node.js 8+](https://nodejs.org/en/download/) and [npm 6+](https://www.npmjs.com/get-npm)
-- Browsers
-  - [Chrome](https://www.google.com/chrome/) and [ChromeDriver](https://chromedriver.chromium.org/downloads)
-  - [Firefox](https://www.mozilla.org/en-US/firefox/new/) and [geckodriver](https://github.com/mozilla/geckodriver/releases)
+[Node.js 8+](https://nodejs.org/en/download/):
+
+```sh
+$ brew install node
+```
+
+[Yarn 1+](https://classic.yarnpkg.com/en/docs/install/):
+
+```sh
+$ brew install yarn
+```
+
+[Chrome](https://www.google.com/chrome/):
+
+```sh
+$ brew cask install google-chrome
+```
+
+[ChromeDriver](https://chromedriver.chromium.org/downloads):
+
+```sh
+$ brew install chromedriver
+```
+
+[Firefox](https://www.mozilla.org/en-US/firefox/new/):
+
+```sh
+$ brew cask install firefox
+```
+
+[geckodriver](https://github.com/mozilla/geckodriver/releases):
+
+```sh
+$ brew cask install geckodriver
+```
 
 ## Install
 
 ```sh
 $ git clone https://github.com/remarkablemark/webdriverjs-recipes.git
 $ cd webdriverjs-recipes
-$ npm install
+$ yarn
 ```
 
 ## Scripts
 
-Script written with [async/await](https://javascript.info/async-await):
+Using [async/await](https://javascript.info/async-await):
 
 ```js
-$ npm run async-await
+$ yarn async-await
 ```
 
 Build driver with Firefox browser:
 
 ```sh
-$ npm run build-driver
+$ yarn build-driver
 ```
 
 Build driver with Chrome browser:
 
 ```sh
-$ SELENIUM_BROWSER=chrome npm run build-driver
+$ SELENIUM_BROWSER=chrome yarn build-driver
 ```
 
 Check if element exists:
 
 ```sh
-$ npm run check-element-exists
+$ yarn check-element-exists
 ```
 
 [Launch Chrome profile](https://remarkablemark.org/blog/2016/11/27/webdriverjs-chrome-profile/):
 
 ```sh
-$ npm run chrome-profile
+$ yarn chrome-profile
 ```
 
 Find element(s):
 
 ```sh
-$ npm run find
+$ yarn find
 ```
 
-Script written with [promise manager](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/promise.html):
+Using the [promise manager](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/promise.html):
 
 ```js
-$ npm run promise-manager
+$ yarn promise-manager
 ```
 
 Wait until condition is true:
 
 ```sh
-$ npm run wait-until
+$ yarn wait-until
 ```
 
-Take screenshot:
+Take a screenshot:
 
 ```sh
-$ npm run take-screenshot
+$ yarn take-screenshot
 ```
 
 Run tests with [Mocha](https://mochajs.org/):
 
 ```sh
-$ npm run testing-with-mocha
+$ yarn testing-with-mocha
 ```
 
 ## License
