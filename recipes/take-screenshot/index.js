@@ -1,5 +1,5 @@
 const { writeFile } = require('fs');
-const driver = require('../build-driver');
+const driver = require('../build');
 
 const url =
   'http://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#takeScreenshot';

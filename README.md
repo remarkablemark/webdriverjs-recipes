@@ -61,13 +61,13 @@ yarn async-await
 Build driver with Firefox browser:
 
 ```sh
-yarn build-driver
+yarn build
 ```
 
 Build driver with Chrome browser:
 
 ```sh
-SELENIUM_BROWSER=chrome yarn build-driver
+SELENIUM_BROWSER=chrome yarn build
 ```
 
 Check if element exists:

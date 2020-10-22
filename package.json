@@ -3,7 +3,7 @@
   "workspaces": ["recipes/*"],
   "scripts": {
     "async-await": "node recipes/async-await",
-    "build-driver": "node recipes/build-driver",
+    "build": "node recipes/build",
     "check-element-exists": "node recipes/check-element-exists",
     "chrome-profile": "node recipes/chrome-profile",
     "find": "node recipes/find",

@@ -1,7 +1,7 @@
 process.env.SELENIUM_BROWSER = 'chrome';
 
 const { Key, until } = require('selenium-webdriver');
-const driver = require('../build-driver');
+const driver = require('../build');
 
 const url =
   'https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#wait';

@@ -1,5 +1,5 @@
 const { By } = require('selenium-webdriver');
-const driver = require('../build-driver');
+const driver = require('../build');
 
 const url =
   'https://seleniumhq.github.io/selenium/docs/api/javascript/index.html';
