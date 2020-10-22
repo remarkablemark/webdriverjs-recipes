@@ -1,0 +1,8 @@
+{
+  "name": "testing-with-mocha",
+  "version": "0.0.0",
+  "dependencies": {
+    "mocha": "^6.2.0",
+    "selenium-webdriver": "^3.6.0"
+  }
+}

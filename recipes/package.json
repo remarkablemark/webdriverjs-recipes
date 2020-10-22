@@ -1,6 +1,7 @@
 {
-  "private": true,
-  "workspaces": ["recipes/*"],
+  "name": "webdriverjs-recipes",
+  "description": "Recipes for using WebDriverJS (Selenium for Node.js).",
+  "author": "Mark <mark@remarkablemark.org>",
   "scripts": {
     "async-await": "node recipes/async-await",
     "build-driver": "node recipes/build-driver",
@@ -12,8 +13,15 @@
     "testing-with-mocha": "mocha recipes/testing-with-mocha",
     "wait-until": "node recipes/wait-until"
   },
+  "dependencies": {
+    "chromedriver": "^86.0.0",
+    "mocha": "^6.2.0",
+    "selenium-webdriver": "^3.6.0"
+  },
   "engines": {
     "node": ">=8",
-    "yarn": ">=1"
-  }
+    "npm": ">=6"
+  },
+  "private": true,
+  "license": "MIT"
 }
