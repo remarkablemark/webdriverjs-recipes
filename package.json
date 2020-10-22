@@ -8,7 +8,7 @@
     "chrome-profile": "node recipes/chrome-profile",
     "find": "node recipes/find",
     "promise-manager": "node recipes/promise-manager",
-    "take-screenshot": "node recipes/take-screenshot",
+    "screenshot": "node recipes/screenshot",
     "testing-with-mocha": "mocha recipes/testing-with-mocha",
     "wait-until": "node recipes/wait-until"
   },

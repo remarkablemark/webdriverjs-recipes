@@ -1,5 +1,5 @@
 {
-  "name": "take-screenshot",
+  "name": "screenshot",
   "version": "0.0.0",
   "dependencies": {
     "selenium-webdriver": "^3.6.0"

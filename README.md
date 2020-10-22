@@ -103,7 +103,7 @@ yarn wait-until
 Take a screenshot:
 
 ```sh
-yarn take-screenshot
+yarn screenshot
 ```
 
 Run tests with [Mocha](https://mochajs.org/):
