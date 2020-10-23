@@ -2,6 +2,6 @@
   "name": "chrome-profile",
   "version": "0.0.0",
   "dependencies": {
-    "selenium-webdriver": "^3.6.0"
+    "selenium-webdriver": "^4.0.0-alpha.7"
   }
 }
