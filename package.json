@@ -4,7 +4,6 @@
   "scripts": {
     "async-await": "node recipes/async-await",
     "build": "node recipes/build",
-    "check-element-exists": "node recipes/check-element-exists",
     "chrome-profile": "node recipes/chrome-profile",
     "find": "node recipes/find",
     "promise-manager": "node recipes/promise-manager",

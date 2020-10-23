@@ -70,12 +70,6 @@ Build driver with Chrome browser:
 SELENIUM_BROWSER=chrome yarn build
 ```
 
-Check if element exists:
-
-```sh
-yarn check-element-exists
-```
-
 [Launch Chrome profile](https://remarkablemark.org/blog/2016/11/27/webdriverjs-chrome-profile/):
 
 ```sh

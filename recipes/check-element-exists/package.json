@@ -1,7 +1,0 @@
-{
-  "name": "check-element-exists",
-  "version": "0.0.0",
-  "dependencies": {
-    "selenium-webdriver": "^4.0.0-alpha.7"
-  }
-}
