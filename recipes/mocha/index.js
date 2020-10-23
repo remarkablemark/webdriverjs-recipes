@@ -1,5 +1,3 @@
-// WebDriverJS testing methods must be used instead of mocha methods due to async
-const { after, before, describe, it } = require('selenium-webdriver/testing');
 const assert = require('assert');
 
 describe('WebDriverJS', function() {
@@ -7,20 +5,17 @@ describe('WebDriverJS', function() {
   let driver;
 
   // setup
-  before(() => {
+  before(async () => {
     driver = require('../build');
   });
 
   // teardown
-  after(() => {
-    driver.quit();
+  after(async () => {
+    await driver.quit();
   });
 
-  it('opens Google', done => {
-    driver.get('https://www.google.com');
-    driver.getTitle().then(title => {
-      assert.equal(title, 'Google');
-      done();
-    });
+  it('opens Google', async () => {
+    await driver.get('https://www.google.com');
+    assert.equal(await driver.getTitle(), 'Google');
   });
 });

@@ -8,7 +8,7 @@
     "find": "node recipes/find",
     "promise-manager": "node recipes/promise-manager",
     "screenshot": "node recipes/screenshot",
-    "mocha": "mocha recipes/mocha",
+    "mocha": "recipes/mocha/node_modules/.bin/mocha recipes/mocha",
     "wait-until": "node recipes/wait-until"
   },
   "engines": {
