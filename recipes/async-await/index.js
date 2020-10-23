@@ -1,20 +1,12 @@
-const { Builder, Key, promise, until } = require('selenium-webdriver');
+const { Builder, Key, until } = require('selenium-webdriver');
 
 /**
- * Disable the promise manager
- * Alternatively, it can be disabled by setting the environment variable:
- * SELENIUM_PROMISE_MANAGER=0
- *
- * {@link https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs#step-1-disabling-the-promise-manager}
+ * {@link https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs#moving-to-asyncawait}
  */
-promise.USE_PROMISE_MANAGER = false;
-
-async function run() {
-  let driver;
+(async () => {
+  const driver = new Builder().forBrowser('firefox').build();
 
   try {
-    driver = await new Builder().forBrowser('chrome').build();
-
     await driver.get('https://www.google.com/');
     console.log('getTitle:', await driver.getTitle());
 
@@ -24,10 +16,8 @@ async function run() {
     await driver.wait(until.titleContains('webdriver'), 1000);
     console.log('getTitle:', await driver.getTitle());
   } catch (error) {
-    console.log(error);
+    console.error(error);
   } finally {
     await driver.quit();
   }
-}
-
-run();
+})();
