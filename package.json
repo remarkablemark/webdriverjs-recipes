@@ -6,9 +6,10 @@
     "build": "node recipes/build",
     "chrome-profile": "node recipes/chrome-profile",
     "find": "node recipes/find",
+    "jest": "recipes/jest/node_modules/.bin/jest recipes/jest",
+    "mocha": "recipes/mocha/node_modules/.bin/mocha recipes/mocha",
     "promise-manager": "node recipes/promise-manager",
     "screenshot": "node recipes/screenshot",
-    "mocha": "recipes/mocha/node_modules/.bin/mocha recipes/mocha",
     "wait-until": "node recipes/wait-until"
   },
   "engines": {
