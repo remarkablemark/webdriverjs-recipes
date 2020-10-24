@@ -1,8 +1,10 @@
 const assert = require('assert');
 const { Given, When, Then, AfterAll } = require('cucumber');
-const { By, Key } = require('selenium-webdriver');
+const { Key } = require('selenium-webdriver');
 const { setDefaultTimeout } = require('cucumber');
+
 const driver = require('../../build');
+const page = require('./google-search-page');
 
 const TEN_MINUTES = 10000;
 const FIVE_MINUTES = TEN_MINUTES / 2;
@@ -11,11 +13,11 @@ const ONE_MINUTE = TEN_MINUTES / 10;
 setDefaultTimeout(FIVE_MINUTES);
 
 Given('I am on the Google search page', { timeout: TEN_MINUTES }, async () => {
-  await driver.get('https://www.google.com/');
+  await driver.get(page.url);
 });
 
 When('I search for {string}', async searchTerm => {
-  const element = await driver.findElement(By.name('q'));
+  const element = await driver.findElement(page.input);
   await element.sendKeys(searchTerm, Key.RETURN);
   await driver.sleep(ONE_MINUTE);
 });
