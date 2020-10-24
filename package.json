@@ -6,8 +6,8 @@
     "build": "node recipes/build",
     "chrome-profile": "node recipes/chrome-profile",
     "find": "node recipes/find",
-    "jest": "recipes/jest/node_modules/.bin/jest recipes/jest",
-    "mocha": "recipes/mocha/node_modules/.bin/mocha recipes/mocha",
+    "jest": "yarn --cwd recipes/jest test",
+    "mocha": "yarn --cwd recipes/mocha test",
     "promise-manager": "node recipes/promise-manager",
     "screenshot": "node recipes/screenshot",
     "wait-until": "node recipes/wait-until"
