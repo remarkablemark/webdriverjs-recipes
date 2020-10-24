@@ -50,61 +50,51 @@ cd webdriverjs-recipes
 yarn
 ```
 
-## Scripts
+## Available Scripts
 
-Using [async/await](https://javascript.info/async-await):
+In the project directory, you can run:
 
-```js
-yarn async-await
-```
+### `yarn async-await`
 
-Build driver with Firefox browser:
+Automates a Firefox browser using [async/await](https://javascript.info/async-await).
 
-```sh
-yarn build
-```
+### `yarn build`
 
-Build driver with Chrome browser:
+Builds driver with Firefox browser.
+
+To build driver with Chrome browser:
 
 ```sh
 SELENIUM_BROWSER=chrome yarn build
 ```
 
-[Launch Chrome profile](https://remarkablemark.org/blog/2016/11/27/webdriverjs-chrome-profile/):
+### `yarn chrome-profile`
 
-```sh
-yarn chrome-profile
-```
+Launches Chrome profile page (see [article](https://remarkablemark.org/blog/2016/11/27/webdriverjs-chrome-profile/)).
 
-Find element(s):
+The profile data is saved at `./my_profile_path/`.
 
-```sh
-yarn find
-```
+### `yarn find`
 
-Using the deprecated [Promise Manager](https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs):
+Finds elements.
 
-```js
-yarn promise-manager
-```
+### `yarn promise-manager`
 
-Wait until condition is true:
+Automates a Firefox browser using the deprecated [Promise Manager](https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs).
 
-```sh
-yarn wait-until
-```
+This uses [selenium-webdriver@3.6.0](https://www.npmjs.com/package/selenium-webdriver/v/3.6.0).
 
-Take a screenshot:
+### `yarn wait-until`
 
-```sh
-yarn screenshot
-```
+Waits until condition is true.
 
-Run tests with [Mocha](https://mochajs.org/):
+### `yarn screenshot`
 
-```sh
-yarn mocha
-```
+Takes and saves a screenshot to `./screenshot.png`.
+
+### `yarn mocha`
+
+Runs browser automation test with [Mocha](https://mochajs.org/).
 
 ## License
 
