@@ -3,50 +3,61 @@ process.env.SELENIUM_BROWSER = 'chrome';
 const { Key, until } = require('selenium-webdriver');
 const driver = require('../build');
 
-const url =
-  'https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#wait';
-driver.get(url);
+const TIMEOUT = 1000; // milliseconds
 
-/**
- * `wait` and `util.elementLocated`
- *
- * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#wait}
- * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/until.html}
- */
-element = driver.wait(
-  until.elementLocated({ css: 'input' }),
-  1000, // delay in milliseconds
-);
+class WaitUntil {
+  /**
+   * wait util.elementLocated
+   *
+   * {@link https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#wait}
+   */
+  static async waitUntilElementLocated() {
+    const element = await driver.wait(
+      until.elementLocated({ css: 'input' }),
+      TIMEOUT,
+    );
+    await element.sendKeys('until');
 
-/**
- * `sendKeys`
- *
- * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#sendKeys}
- */
-element.sendKeys('until');
+    await driver.wait(
+      until.elementLocated({
+        xpath: '//div[@class="ac-renderer" and @aria-expanded="true"]',
+      }),
+      TIMEOUT,
+    );
+    await element.sendKeys(Key.ENTER);
 
-driver.wait(
-  until.elementLocated({
-    xpath: '//div[@class="ac-renderer" and @aria-expanded="true"]',
-  }),
-  1000,
-);
+    const url = await driver.getCurrentUrl();
+    console.log('waitUntilElementLocated:', url);
+  }
 
-element.sendKeys(Key.ENTER);
+  /**
+   * wait custom
+   *
+   * {@link https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/until.html}
+   */
+  static async waitCustom() {
+    await driver.wait(async () => {
+      const url = await driver.getCurrentUrl();
+      return /until/.test(url);
+    }, TIMEOUT);
 
-driver.getCurrentUrl().then(url => {
-  console.log('getCurrentUrl:', url);
-});
+    const url = await driver.getCurrentUrl();
+    console.log('waitCustom:', url);
+  }
 
-/**
- * `getCurrentUrl`
- *
- * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#getCurrentUrl}
- */
-driver.wait(() => driver.getCurrentUrl().then(url => /until/.test(url)), 1000);
+  static async run() {
+    try {
+      await driver.get(
+        'https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#wait',
+      );
+      await this.waitUntilElementLocated();
+      await this.waitCustom();
+    } catch (error) {
+      console.error(error);
+    } finally {
+      await driver.quit();
+    }
+  }
+}
 
-driver.getCurrentUrl().then(url => {
-  console.log('getCurrentUrl:', url);
-});
-
-driver.quit();
+WaitUntil.run();
