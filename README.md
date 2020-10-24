@@ -74,9 +74,21 @@ Launches Chrome profile page (see [article](https://remarkablemark.org/blog/2016
 
 The profile data is saved at `./my_profile_path/`.
 
+### `yarn cucumber`
+
+Runs browser automation test written in [Cucumber](https://github.com/cucumber/cucumber-js).
+
 ### `yarn find`
 
 Finds elements.
+
+### `yarn jest`
+
+Runs browser automation test with [Jest](https://jestjs.io/).
+
+### `yarn mocha`
+
+Runs browser automation test with [Mocha](https://mochajs.org/).
 
 ### `yarn promise-manager`
 
@@ -84,17 +96,13 @@ Automates a Firefox browser using the deprecated [Promise Manager](https://githu
 
 This uses [selenium-webdriver@3.6.0](https://www.npmjs.com/package/selenium-webdriver/v/3.6.0).
 
-### `yarn wait-until`
-
-Waits until condition is true.
-
 ### `yarn screenshot`
 
 Takes and saves a screenshot to `./screenshot.png`.
 
-### `yarn mocha`
+### `yarn wait-until`
 
-Runs browser automation test with [Mocha](https://mochajs.org/).
+Waits until condition is true.
 
 ## License
 
