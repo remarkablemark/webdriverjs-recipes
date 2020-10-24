@@ -1,0 +1,8 @@
+{
+  "name": "cucumber",
+  "version": "0.0.0",
+  "dependencies": {
+    "cucumber": "6",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  }
+}
