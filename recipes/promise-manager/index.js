@@ -1,10 +1,11 @@
-/**
- * promise manager
- *
- * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/promise.html}
- */
 const { Builder, Key, until } = require('selenium-webdriver');
 
+/**
+ * Promise Manager
+ *
+ * {@link https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs}
+ * {@link https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/promise.html}
+ */
 const driver = new Builder().forBrowser('chrome').build();
 
 driver.get('https://www.google.com/');

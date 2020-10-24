@@ -1,8 +1,8 @@
 # WebDriverJS Recipes
 
-Recipes and examples of how to perform automation with [WebDriverJS](https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs) ([Selenium](https://www.seleniumhq.org/) for [Node.js](https://nodejs.org/)).
+Recipes and examples of how to perform automation with [WebDriverJS](https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs) ([Selenium](https://www.selenium.dev/) for [Node.js](https://nodejs.org/)).
 
-See [API documentation](https://seleniumhq.github.io/selenium/docs/api/javascript/index.html) for more information on [selenium-webdriver](https://www.npmjs.com/package/selenium-webdriver).
+See [API documentation](https://www.selenium.dev/selenium/docs/api/javascript/index.html) for more information on [selenium-webdriver](https://www.npmjs.com/package/selenium-webdriver).
 
 ## Prerequisites
 
@@ -82,7 +82,7 @@ Find element(s):
 yarn find
 ```
 
-Using the [promise manager](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/promise.html):
+Using the deprecated [Promise Manager](https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs):
 
 ```js
 yarn promise-manager

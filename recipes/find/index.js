@@ -5,8 +5,8 @@ class Find {
   /**
    * findElement By.tagName
    *
-   * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#findElement}
-   * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_By.html}
+   * {@link https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#findElement}
+   * {@link https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_By.html}
    */
   static async findElementByTagName() {
     const element = await driver.findElement(By.tagName('h1'));
@@ -25,7 +25,7 @@ class Find {
   /**
    * findElements By.Hash
    *
-   * {@link https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#findElements}
+   * {@link https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/chrome_exports_Driver.html#findElements}
    */
   static async findElementsByHash() {
     const elements = await driver.findElements({ css: 'h2' });
@@ -64,7 +64,7 @@ class Find {
   static async run() {
     try {
       await driver.get(
-        'https://seleniumhq.github.io/selenium/docs/api/javascript/index.html',
+        'https://www.selenium.dev/selenium/docs/api/javascript/index.html',
       );
       await this.findElementByTagName();
       await this.findElementByHash();
