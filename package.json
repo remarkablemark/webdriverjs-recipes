@@ -5,6 +5,7 @@
     "async-await": "node recipes/async-await",
     "build": "node recipes/build",
     "chrome-profile": "node recipes/chrome-profile",
+    "cucumber": "yarn --cwd recipes/cucumber test",
     "find": "node recipes/find",
     "jest": "yarn --cwd recipes/jest test",
     "mocha": "yarn --cwd recipes/mocha test",
