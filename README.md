@@ -1,5 +1,7 @@
 # WebDriverJS Recipes
 
+[![build](https://github.com/remarkablemark/webdriverjs-recipes/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/webdriverjs-recipes/actions/workflows/build.yml)
+
 Recipes and examples of how to perform automation with [WebDriverJS](https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs) ([Selenium](https://www.selenium.dev/) for [Node.js](https://nodejs.org/)).
 
 See [API documentation](https://www.selenium.dev/selenium/docs/api/javascript/index.html) for more information on [selenium-webdriver](https://www.npmjs.com/package/selenium-webdriver).
