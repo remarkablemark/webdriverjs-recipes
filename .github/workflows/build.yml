@@ -1,0 +1,53 @@
+name: build
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      CI: true
+    strategy:
+      matrix:
+        node-version: [14]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Run async-await
+        run: yarn async-await
+
+      - name: Run build
+        run: node -e 'require("./recipes/build").quit()'
+
+      - name: Run chrome-profile
+        run: yarn chrome-profile
+
+      - name: Run cucumber
+        run: yarn cucumber
+
+      - name: Run find
+        run: yarn find
+
+      - name: Run jest
+        run: yarn jest
+
+      - name: Run mocha
+        run: yarn mocha
+
+      - name: Run promise-manager
+        run: yarn promise-manager
+
+      - name: Run screenshot
+        run: yarn screenshot
+
+      - name: Run wait-until
+        run: yarn wait-until
