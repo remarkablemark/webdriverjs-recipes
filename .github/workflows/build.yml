@@ -4,6 +4,8 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      CI: true
     strategy:
       matrix:
         node-version: [14]
@@ -24,7 +26,7 @@ jobs:
         run: yarn async-await
 
       - name: Run build
-        run: yarn build
+        run: node -e 'require("./recipes/build").quit()'
 
       - name: Run chrome-profile
         run: yarn chrome-profile
