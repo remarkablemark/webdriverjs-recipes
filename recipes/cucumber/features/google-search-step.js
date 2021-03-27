@@ -1,7 +1,7 @@
 const assert = require('assert');
-const { Given, When, Then, AfterAll } = require('cucumber');
+const { Given, When, Then, AfterAll } = require('@cucumber/cucumber');
 const { Key } = require('selenium-webdriver');
-const { setDefaultTimeout } = require('cucumber');
+const { setDefaultTimeout } = require('@cucumber/cucumber');
 
 const driver = require('../../build');
 const page = require('./google-search-page');
@@ -16,17 +16,17 @@ Given('I am on the Google search page', { timeout: TEN_MINUTES }, async () => {
   await driver.get(page.url);
 });
 
-When('I search for {string}', async searchTerm => {
+When('I search for {string}', async (searchTerm) => {
   const element = await driver.findElement(page.input);
   await element.sendKeys(searchTerm, Key.RETURN);
   await driver.sleep(ONE_MINUTE);
 });
 
-Then('I see the page title {string}', async expectedTitle => {
+Then('I see the page title {string}', async (expectedTitle) => {
   const actualTitle = await driver.getTitle();
   assert.strictEqual(actualTitle, expectedTitle);
 });
 
-AfterAll('end', async () => {
+AfterAll(async () => {
   await driver.quit();
 });
