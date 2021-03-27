@@ -6,13 +6,13 @@ See [API documentation](https://www.selenium.dev/selenium/docs/api/javascript/in
 
 ## Prerequisites
 
-[Node.js 8+](https://nodejs.org/en/download/):
+[Node.js](https://nodejs.org/en/download/):
 
 ```sh
 brew install node
 ```
 
-[Yarn 1+](https://classic.yarnpkg.com/en/docs/install/):
+[Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable):
 
 ```sh
 brew install yarn
@@ -56,7 +56,7 @@ In the project directory, you can run:
 
 ### `yarn async-await`
 
-Automates a Firefox browser using [async/await](https://javascript.info/async-await).
+Automates a Firefox browser using [async/await](https://javascript.info/async-await). See [article](https://b.remarkabl.org/34tlEFy).
 
 ### `yarn build`
 
@@ -70,17 +70,17 @@ SELENIUM_BROWSER=chrome yarn build
 
 ### `yarn chrome-profile`
 
-Launches Chrome profile page (see [article](https://remarkablemark.org/blog/2016/11/27/webdriverjs-chrome-profile/)).
+Launches Chrome profile page. See [article](https://b.remarkabl.org/2PcaLmy).
 
 The profile data is saved at `./my_profile_path/`.
 
 ### `yarn cucumber`
 
-Runs browser automation test written in [Cucumber](https://github.com/cucumber/cucumber-js).
+Runs browser automation test written in [Cucumber](https://github.com/cucumber/cucumber-js). See [artcile](https://b.remarkabl.org/34pXj3b).
 
 ### `yarn find`
 
-Finds elements.
+Finds elements. See [article](https://b.remarkabl.org/3dcXiCT).
 
 ### `yarn jest`
 
@@ -88,7 +88,7 @@ Runs browser automation test with [Jest](https://jestjs.io/).
 
 ### `yarn mocha`
 
-Runs browser automation test with [Mocha](https://mochajs.org/).
+Runs browser automation test with [Mocha](https://mochajs.org/). See [article](https://b.remarkabl.org/2bbW9M2).
 
 ### `yarn promise-manager`
 
