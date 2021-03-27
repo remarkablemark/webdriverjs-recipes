@@ -1,6 +1,8 @@
 {
   "private": true,
-  "workspaces": ["recipes/*"],
+  "workspaces": [
+    "recipes/*"
+  ],
   "scripts": {
     "async-await": "node recipes/async-await",
     "build": "node recipes/build",
