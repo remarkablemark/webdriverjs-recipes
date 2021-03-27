@@ -6,6 +6,6 @@
   },
   "dependencies": {
     "cucumber": "6",
-    "selenium-webdriver": "^4.0.0-alpha.7"
+    "selenium-webdriver": "^4.0.0-beta.2"
   }
 }
