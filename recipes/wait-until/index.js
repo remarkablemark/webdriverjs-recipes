@@ -1,5 +1,3 @@
-process.env.SELENIUM_BROWSER = 'chrome';
-
 const { Key, until } = require('selenium-webdriver');
 const driver = require('../build');
 
