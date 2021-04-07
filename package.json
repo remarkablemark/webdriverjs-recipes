@@ -12,6 +12,7 @@
     "jest": "yarn --cwd recipes/jest test",
     "mocha": "yarn --cwd recipes/mocha test",
     "promise-manager": "node recipes/promise-manager",
+    "resources": "node recipes/resources",
     "screenshot": "node recipes/screenshot",
     "wait-until": "node recipes/wait-until"
   },

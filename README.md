@@ -98,6 +98,10 @@ Automates a Firefox browser using the deprecated [Promise Manager](https://githu
 
 This uses [selenium-webdriver@3.6.0](https://www.npmjs.com/package/selenium-webdriver/v/3.6.0).
 
+### `yarn resources`
+
+Gets the browser resource file URL's of a webpage. See [article](https://b.remarkabl.org/39OCH7f).
+
 ### `yarn screenshot`
 
 Takes and saves a screenshot to `./screenshot.png`.
