@@ -2,7 +2,7 @@
   "name": "screenshot",
   "version": "0.0.0",
   "dependencies": {
-    "selenium-webdriver": "^4.0.0-beta.2"
+    "selenium-webdriver": "^4.0.0-beta.3"
   },
   "license": "MIT"
 }
