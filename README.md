@@ -14,7 +14,7 @@ See [API documentation](https://www.selenium.dev/selenium/docs/api/javascript/in
 brew install node
 ```
 
-[Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable):
+[Yarn 1](https://classic.yarnpkg.com/en/docs/install/#mac-stable):
 
 ```sh
 brew install yarn
