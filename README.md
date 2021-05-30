@@ -46,9 +46,15 @@ brew cask install geckodriver
 
 ## Install
 
+Clone the repository:
+
 ```sh
-git clone https://github.com/remarkablemark/webdriverjs-recipes.git
-cd webdriverjs-recipes
+git clone https://github.com/remarkablemark/webdriverjs-recipes.git && cd webdriverjs-recipes
+```
+
+Install the dependencies:
+
+```sh
 yarn
 ```
 
