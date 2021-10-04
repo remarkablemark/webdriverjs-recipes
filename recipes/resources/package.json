@@ -2,7 +2,7 @@
   "name": "resources",
   "version": "0.0.0",
   "dependencies": {
-    "selenium-webdriver": "^4.0.0-rc-1"
+    "selenium-webdriver": "^4.0.0-rc-2"
   },
   "license": "MIT"
 }
