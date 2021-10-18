@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "mocha": "^8.2.0",
-    "selenium-webdriver": "^4.0.0-rc-2"
+    "selenium-webdriver": "^4.0.0"
   },
   "license": "MIT"
 }
