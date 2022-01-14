@@ -2,6 +2,7 @@
   "name": "async-await",
   "version": "0.0.0",
   "dependencies": {
+    "geckodriver": "^3.0.1",
     "selenium-webdriver": "^4.1.0"
   },
   "license": "MIT"
