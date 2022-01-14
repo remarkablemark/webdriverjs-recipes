@@ -17,7 +17,7 @@
     "wait-until": "node recipes/wait-until"
   },
   "engines": {
-    "node": ">=8",
+    "node": ">=16",
     "yarn": "1"
   },
   "license": "MIT"
