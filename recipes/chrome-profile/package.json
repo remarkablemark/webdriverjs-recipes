@@ -2,7 +2,7 @@
   "name": "chrome-profile",
   "version": "0.0.0",
   "dependencies": {
-    "chromedriver": "^109.0.0",
+    "chromedriver": "^110.0.0",
     "selenium-webdriver": "^4.7.1"
   },
   "license": "MIT"
