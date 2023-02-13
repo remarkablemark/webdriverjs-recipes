@@ -2,7 +2,7 @@
   "name": "wait-until",
   "version": "0.0.0",
   "dependencies": {
-    "selenium-webdriver": "^4.7.1"
+    "selenium-webdriver": "^4.8.0"
   },
   "license": "MIT"
 }
