@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "jest": "^26.6.1",
-    "selenium-webdriver": "^4.7.1"
+    "selenium-webdriver": "^4.8.1"
   },
   "license": "MIT"
 }
