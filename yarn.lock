@@ -3771,14 +3771,14 @@ seed-random@~2.2.0:
   resolved "https://registry.yarnpkg.com/seed-random/-/seed-random-2.2.0.tgz#2a9b19e250a817099231a5b99a4daf80b7fbed54"
   integrity sha1-KpsZ4lCoFwmSMaW5mk2vgLf77VQ=
 
-selenium-webdriver@^4.7.1:
-  version "4.7.1"
-  resolved "https://registry.yarnpkg.com/selenium-webdriver/-/selenium-webdriver-4.7.1.tgz#29be9eaac1bd5aa37728c3e5cca352b1e98ec85d"
-  integrity sha512-IfTM9OE8HtCKjOJwyudbAVtAHQKOJK8mu2qrXXbKyj4lqgXF+2lYW4rSZXCV6SLQRWZ+DVGkomCmFzq5orD/ZA==
+selenium-webdriver@^4.8.2:
+  version "4.8.2"
+  resolved "https://registry.yarnpkg.com/selenium-webdriver/-/selenium-webdriver-4.8.2.tgz#2e7cb452133f7a6859879575852ef29f0ab4668c"
+  integrity sha512-d2dcpDLPcXlBy5qcPtB1B8RYTtj1N+JiHQLViFx3OP+i5hqkAuqTfJEYUh4qNX11S4NvbxjteiwN3OPwK3vPVw==
   dependencies:
     jszip "^3.10.0"
     tmp "^0.2.1"
-    ws ">=8.7.0"
+    ws ">=8.11.0"
 
 "semver@2 || 3 || 4 || 5", semver@^5.5.0:
   version "5.7.1"
@@ -4520,10 +4520,10 @@ write-file-atomic@^3.0.0:
     signal-exit "^3.0.2"
     typedarray-to-buffer "^3.1.5"
 
-ws@>=8.7.0:
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-8.8.0.tgz#8e71c75e2f6348dbf8d78005107297056cb77769"
-  integrity sha512-JDAgSYQ1ksuwqfChJusw1LSJ8BizJ2e/vVu5Lxjq3YvNJNlROv1ui4i+c/kUUrPheBvQl4c5UbERhTwKa6QBJQ==
+ws@>=8.11.0:
+  version "8.13.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.13.0.tgz#9a9fb92f93cf41512a0735c8f4dd09b8a1211cd0"
+  integrity sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==
 
 ws@^7.4.4:
   version "7.4.6"
