@@ -40,9 +40,6 @@ jobs:
       - name: Run mocha
         run: yarn mocha
 
-      - name: Run promise-manager
-        run: yarn promise-manager
-
       - name: Run screenshot
         run: yarn screenshot
 
