@@ -14,6 +14,8 @@ See [API documentation](https://www.selenium.dev/selenium/docs/api/javascript/in
 brew install node
 ```
 
+[nvm](https://github.com/nvm-sh/nvm)
+
 [Yarn 1](https://classic.yarnpkg.com/en/docs/install/#mac-stable):
 
 ```sh
@@ -50,6 +52,12 @@ Clone the repository:
 
 ```sh
 git clone https://github.com/remarkablemark/webdriverjs-recipes.git && cd webdriverjs-recipes
+```
+
+Use Node.js version:
+
+```sh
+nvm use
 ```
 
 Install the dependencies:
@@ -97,12 +105,6 @@ Runs browser automation test with [Jest](https://jestjs.io/).
 ### `yarn mocha`
 
 Runs browser automation test with [Mocha](https://mochajs.org/). See [article](https://b.remarkabl.org/2bbW9M2).
-
-### `yarn promise-manager`
-
-Automates a Firefox browser using the deprecated [Promise Manager](https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs).
-
-This uses [selenium-webdriver@3.6.0](https://www.npmjs.com/package/selenium-webdriver/v/3.6.0).
 
 ### `yarn resources`
 

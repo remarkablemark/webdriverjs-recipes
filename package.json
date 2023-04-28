@@ -11,13 +11,15 @@
     "find": "node recipes/find",
     "jest": "yarn --cwd recipes/jest test",
     "mocha": "yarn --cwd recipes/mocha test",
-    "promise-manager": "node recipes/promise-manager",
     "resources": "node recipes/resources",
     "screenshot": "node recipes/screenshot",
     "wait-until": "node recipes/wait-until"
   },
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  },
   "engines": {
-    "node": ">=12",
+    "node": "18",
     "yarn": "1"
   },
   "license": "MIT"

@@ -1,10 +1,14 @@
 const { Builder, Key, until } = require('selenium-webdriver');
+const { Options } = require('selenium-webdriver/firefox');
 
 /**
  * {@link https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs#moving-to-asyncawait}
  */
 (async () => {
-  const driver = new Builder().forBrowser('firefox').build();
+  const driver = new Builder()
+    .forBrowser('firefox')
+    .setFirefoxOptions(new Options().headless())
+    .build();
 
   try {
     await driver.get('https://www.google.com/');
