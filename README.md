@@ -14,7 +14,11 @@ See [API documentation](https://www.selenium.dev/selenium/docs/api/javascript/in
 brew install node
 ```
 
-[nvm](https://github.com/nvm-sh/nvm)
+[nvm](https://github.com/nvm-sh/nvm#install--update-script):
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+```
 
 [Yarn 1](https://classic.yarnpkg.com/en/docs/install/#mac-stable):
 
