@@ -1,4 +1,3 @@
-const assert = require('assert');
 const driver = require('../build');
 
 afterAll(async () => {
@@ -7,5 +6,5 @@ afterAll(async () => {
 
 it('opens Google', async () => {
   await driver.get('https://www.google.com');
-  assert.strictEqual(await driver.getTitle(), 'Google');
+  expect(await driver.getTitle()).toBe('Google');
 });
