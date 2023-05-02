@@ -5,7 +5,7 @@
     "test": "cucumber-js"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^9.1.0",
+    "@cucumber/cucumber": "^9.1.1",
     "selenium-webdriver": "^4.9.0"
   },
   "license": "MIT"
