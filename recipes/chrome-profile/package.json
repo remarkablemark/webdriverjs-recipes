@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "dependencies": {
     "chromedriver": "^112.0.1",
-    "selenium-webdriver": "^4.9.1"
+    "selenium-webdriver": "^4.9.2"
   },
   "license": "MIT"
 }
