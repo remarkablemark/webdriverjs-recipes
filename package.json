@@ -16,7 +16,7 @@
     "wait-until": "node recipes/wait-until"
   },
   "devDependencies": {
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.1"
   },
   "engines": {
     "node": "18",
