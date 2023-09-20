@@ -12,7 +12,6 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          cache: yarn
           # https://www.npmjs.com/package/selenium-webdriver#projected-support-schedule
           node-version-file: .nvmrc
 
