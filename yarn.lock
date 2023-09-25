@@ -2800,10 +2800,10 @@ seed-random@~2.2.0:
   resolved "https://registry.yarnpkg.com/seed-random/-/seed-random-2.2.0.tgz#2a9b19e250a817099231a5b99a4daf80b7fbed54"
   integrity sha1-KpsZ4lCoFwmSMaW5mk2vgLf77VQ=
 
-selenium-webdriver@^4.12.0:
-  version "4.12.0"
-  resolved "https://registry.yarnpkg.com/selenium-webdriver/-/selenium-webdriver-4.12.0.tgz#a8dc8ecf129a2414c2ace6e429aba84722a950a5"
-  integrity sha512-zvPzmTsky6WfO6+BGMj2mCJsw7qKnfQONur2b+pGn8jeTiC+WAUOthZOnaK+HkX5wiU6L4uoMF+JIcOVstp25A==
+selenium-webdriver@^4.13.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/selenium-webdriver/-/selenium-webdriver-4.13.0.tgz#1e06bab7adedb308e3635131bc75bd32038261d5"
+  integrity sha512-8JS0h5E0Sq7gNfbGg8LVaQ+Eqek97tvOONn3Jmy+NiWfb12WYpftz4VTC4D2JT4wakdG6VUzGKpA8cFGg0IjkA==
   dependencies:
     jszip "^3.10.1"
     tmp "^0.2.1"
