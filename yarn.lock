@@ -437,10 +437,10 @@
   dependencies:
     regexp-match-indices "1.0.2"
 
-"@cucumber/cucumber@^10.4.0":
-  version "10.4.0"
-  resolved "https://registry.yarnpkg.com/@cucumber/cucumber/-/cucumber-10.4.0.tgz#e65fb751d7bfbe1d62d91215672e6d9158358487"
-  integrity sha512-pFPu4tCzHJUm1S4GfWUlhJYYqfbVPCmYCADehuhNU+MR29mvy49DQE6WS6aVdwABPawzpBs0H8EuQYA8Vh9Yqw==
+"@cucumber/cucumber@^10.5.1":
+  version "10.5.1"
+  resolved "https://registry.yarnpkg.com/@cucumber/cucumber/-/cucumber-10.5.1.tgz#88ecca15f488b6e6f0998a7708d0cffee9ce090c"
+  integrity sha512-10l/nDbCPNs9y/rO1o9hIlVHmMyLqjvsGNqAO5UX7IlPmslgXLxTbFp7MM1DuSbUq5zuNGfgHymlSvIOARYeUA==
   dependencies:
     "@cucumber/ci-environment" "10.0.1"
     "@cucumber/cucumber-expressions" "17.1.0"
