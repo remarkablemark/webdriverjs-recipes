@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@cucumber/cucumber": "^10.7.0",
-    "selenium-webdriver": "^4.16.0"
+    "selenium-webdriver": "^4.20.0"
   },
   "license": "MIT"
 }
