@@ -6,7 +6,7 @@ const options = new Options()
   .addArguments('--user-data-dir=my_profile_path');
 
 if (process.env.CI === 'true') {
-  options.addArguments('--headless');
+  options.addArguments('--headless=new');
 }
 
 const driver = new Builder()
