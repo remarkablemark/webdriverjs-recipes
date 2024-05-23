@@ -1,6 +1,6 @@
-const { Builder } = require('selenium-webdriver');
+const { Builder, Browser } = require('selenium-webdriver');
 
-const builder = new Builder().forBrowser('firefox');
+const builder = new Builder().forBrowser(Browser.FIREFOX);
 
 if (process.env.CI === 'true') {
   const { Options } = require('selenium-webdriver/firefox');
