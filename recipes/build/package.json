@@ -2,7 +2,7 @@
   "name": "build",
   "version": "0.0.0",
   "dependencies": {
-    "selenium-webdriver": "^4.27.0"
+    "selenium-webdriver": "^4.28.1"
   },
   "license": "MIT"
 }
