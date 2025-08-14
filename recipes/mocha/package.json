@@ -8,5 +8,5 @@
     "mocha": "^10.2.0",
     "selenium-webdriver": "^4.27.0"
   },
-  "license": "MIT"
+  "private": true
 }
