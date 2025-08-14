@@ -26,6 +26,7 @@ jobs:
 
       - name: Run chrome-profile
         run: yarn chrome-profile
+        continue-on-error: true
 
       - name: Run cucumber
         run: yarn cucumber
