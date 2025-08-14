@@ -1,6 +1,5 @@
 {
   "name": "cucumber",
-  "version": "0.0.0",
   "scripts": {
     "test": "cucumber-js"
   },
@@ -8,5 +7,5 @@
     "@cucumber/cucumber": "^11.2.0",
     "selenium-webdriver": "^4.27.0"
   },
-  "license": "MIT"
+  "private": true
 }
