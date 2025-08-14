@@ -19,6 +19,7 @@ Given('I am on the Cucumber page', { timeout: TEN_MINUTES }, async () => {
 When('I click on link {string}', async (text) => {
   const link = await driver.findElement(page.link(text));
   await link.click();
+  await driver.sleep(ONE_MINUTE);
 });
 
 Then('I see the page title {string}', async (expectedTitle) => {
