@@ -2,7 +2,7 @@
   "name": "wait-until",
   "version": "0.0.0",
   "dependencies": {
-    "selenium-webdriver": "^4.36.0"
+    "selenium-webdriver": "^4.37.0"
   },
   "private": true
 }
