@@ -1400,10 +1400,10 @@ chokidar@3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
-chromedriver@^142.0.0:
-  version "142.0.0"
-  resolved "https://registry.yarnpkg.com/chromedriver/-/chromedriver-142.0.0.tgz#03d64cfb36784718ed82555680cd94126cf62684"
-  integrity sha512-BlMMPFOKAOYOT23tjtAjvci57gyYcasKqd/3yGKOjGMEbFZa5kfwoNcUzwL/5ugZ932MJX1fW/j8zk5KD5mHBw==
+chromedriver@^142.0.1:
+  version "142.0.1"
+  resolved "https://registry.yarnpkg.com/chromedriver/-/chromedriver-142.0.1.tgz#bdae48ca1f04743d4ad9c565f4339de1d28cf517"
+  integrity sha512-Cgm5rPQ1aNdkoA4wiwJiKweQErbv+8w5xnN5SA5EIAxN0bcZzWrbcFtwlaKG3DUcJJYQKKArLe4vg+s85wmhfQ==
   dependencies:
     "@testim/chrome-version" "^1.1.4"
     axios "^1.12.0"
