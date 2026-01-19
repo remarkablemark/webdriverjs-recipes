@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "mocha": "^10.2.0",
-    "selenium-webdriver": "^4.39.0"
+    "selenium-webdriver": "^4.40.0"
   },
   "private": true
 }
