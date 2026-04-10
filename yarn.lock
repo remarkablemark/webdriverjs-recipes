@@ -3266,10 +3266,10 @@ seed-random@~2.2.0:
   resolved "https://registry.yarnpkg.com/seed-random/-/seed-random-2.2.0.tgz#2a9b19e250a817099231a5b99a4daf80b7fbed54"
   integrity sha1-KpsZ4lCoFwmSMaW5mk2vgLf77VQ=
 
-selenium-webdriver@^4.42.0:
-  version "4.42.0"
-  resolved "https://registry.yarnpkg.com/selenium-webdriver/-/selenium-webdriver-4.42.0.tgz#1a3c856861891dc80383be833f5336b963482696"
-  integrity sha512-X+5Qe2v921BYATfU/Ckq/BbUVabRe+YAWZ5qiyBSd8EBue+fdoBsyYI506ETupzwZYEVUc3vcYMVSmH0oToDRg==
+selenium-webdriver@^4.43.0:
+  version "4.43.0"
+  resolved "https://registry.yarnpkg.com/selenium-webdriver/-/selenium-webdriver-4.43.0.tgz#f19f9ba6f7b3d7e986f0d3794695ba6da09943ad"
+  integrity sha512-dV4zBTT37or3Z3/8uD6rS8zvd4ZxPuG4EJVlqYIbZCGZCYttZm7xb9rlFLSk4rrsQHAeDYvudl7cquo0vWpHjg==
   dependencies:
     "@bazel/runfiles" "^6.5.0"
     jszip "^3.10.1"
