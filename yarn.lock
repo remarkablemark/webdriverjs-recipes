@@ -484,10 +484,10 @@
   dependencies:
     regexp-match-indices "1.0.2"
 
-"@cucumber/cucumber@^12.8.0":
-  version "12.8.0"
-  resolved "https://registry.yarnpkg.com/@cucumber/cucumber/-/cucumber-12.8.0.tgz#0b8f0b839c94cb1d9761520fae41a74b3c2d3ac2"
-  integrity sha512-sRG2QMAgCic4Uq1q+5LRzApEHiNGX5rhQY/GuOJZ9BIySrGPA9pevB0imJsZvdzt9scaWyIM3c7dIf4Dp1YQRA==
+"@cucumber/cucumber@^12.8.1":
+  version "12.8.1"
+  resolved "https://registry.yarnpkg.com/@cucumber/cucumber/-/cucumber-12.8.1.tgz#7873a1f7f60141d6077755bbbdc819e739fa6d4a"
+  integrity sha512-hCXxiStjbZsRVZlV+CMywkqBtJ6RZTQeXSBZGPHm1YoIOI6YB8pCo0KlnJMmxfKfoeUKagtQMNPnpJBXwhkUjQ==
   dependencies:
     "@cucumber/ci-environment" "13.0.0"
     "@cucumber/cucumber-expressions" "19.0.0"
@@ -495,7 +495,7 @@
     "@cucumber/gherkin-streams" "6.0.0"
     "@cucumber/gherkin-utils" "11.0.0"
     "@cucumber/html-formatter" "23.0.0"
-    "@cucumber/junit-xml-formatter" "0.13.2"
+    "@cucumber/junit-xml-formatter" "0.13.3"
     "@cucumber/message-streams" "4.1.1"
     "@cucumber/messages" "32.2.0"
     "@cucumber/pretty-formatter" "1.0.1"
@@ -560,12 +560,12 @@
   resolved "https://registry.yarnpkg.com/@cucumber/html-formatter/-/html-formatter-23.0.0.tgz#066f548f55274b58b67b4930836bd73579a9bf07"
   integrity sha512-WwcRzdM8Ixy4e53j+Frm3fKM5rNuIyWUfy4HajEN+Xk/YcjA6yW0ACGTFDReB++VDZz/iUtwYdTlPRY36NbqJg==
 
-"@cucumber/junit-xml-formatter@0.13.2":
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/@cucumber/junit-xml-formatter/-/junit-xml-formatter-0.13.2.tgz#e7d210b4ee675c7a31e1422a662cd33ddf9beff4"
-  integrity sha512-worYkxjeOWJV+b7WkgJekWgFHlIhbuocnFK3hP+pMYXqZMmkXsxAorYPjeF8KyLnZXajw5fKHS2bM9rQIUI7Zw==
+"@cucumber/junit-xml-formatter@0.13.3":
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/@cucumber/junit-xml-formatter/-/junit-xml-formatter-0.13.3.tgz#a6ee049caa4afe9160f1514b8c65f24a00e71f42"
+  integrity sha512-w9ujOxiuKDtU6fLzJz+wp4Sgp5Xu6ba7ls00LHJccVmQU0Ba7zs+AHnv3iIgPjKZAQe1w8x93dr8Gaubh7Vqkg==
   dependencies:
-    "@cucumber/query" "^14.0.1 || ^15.0.0"
+    "@cucumber/query" "^15.0.1"
     "@teppeis/multimaps" "^3.0.0"
     luxon "^3.5.0"
     xmlbuilder "^15.1.1"
@@ -595,7 +595,7 @@
     figures "^3.2.0"
     ts-dedent "^2.0.0"
 
-"@cucumber/query@^14.0.1 || ^15.0.0":
+"@cucumber/query@^15.0.1":
   version "15.0.1"
   resolved "https://registry.yarnpkg.com/@cucumber/query/-/query-15.0.1.tgz#91b701121ba95caf7d0e6d9de95041ec3396d297"
   integrity sha512-FMfT3orJblRsOxvU2doECBvQmauizYlj+5JsM8atAKKPbnQTj7v2/OrnuykvQpfZNBf19DYbRq1e832vllRP/g==
