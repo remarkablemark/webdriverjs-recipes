@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "dependencies": {
     "chromedriver": "^150.0.3",
-    "selenium-webdriver": "^4.45.0"
+    "selenium-webdriver": "^4.46.0"
   },
   "config": {
     "chromedriver_version": "LATEST"
