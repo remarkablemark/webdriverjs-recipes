@@ -2,7 +2,7 @@
   "name": "chrome-profile",
   "version": "0.0.0",
   "dependencies": {
-    "chromedriver": "^151.0.5",
+    "chromedriver": "^152.0.0",
     "selenium-webdriver": "^4.47.0"
   },
   "config": {
