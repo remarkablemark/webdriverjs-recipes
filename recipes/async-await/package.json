@@ -2,7 +2,7 @@
   "name": "async-await",
   "version": "0.0.0",
   "dependencies": {
-    "selenium-webdriver": "^4.48.0"
+    "selenium-webdriver": "^4.49.0"
   },
   "private": true
 }
