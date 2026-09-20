@@ -17,7 +17,7 @@ brew install node
 [nvm](https://github.com/nvm-sh/nvm#install--update-script):
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.7/install.sh | bash
 ```
 
 [Yarn 1](https://classic.yarnpkg.com/en/docs/install/#mac-stable):
