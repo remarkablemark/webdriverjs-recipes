@@ -1324,10 +1324,10 @@ chokidar@3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
-chromedriver@^153.0.3:
-  version "153.0.3"
-  resolved "https://registry.yarnpkg.com/chromedriver/-/chromedriver-153.0.3.tgz#92f9e7cdf339db9ced339a98a2a53dcb1ab66a08"
-  integrity sha512-/1+Fr3HcPnclLYYSQoK8l4otRzzda2lN/XOME7Nwhz98U8DI+tYom1+UjHBPeiLCFyZe5FsBiHjHPOuAkj2hvA==
+chromedriver@^154.0.0:
+  version "154.0.0"
+  resolved "https://registry.yarnpkg.com/chromedriver/-/chromedriver-154.0.0.tgz#010f703f6f0329231aef3d53634e99d624a47a8c"
+  integrity sha512-kn+ENZ2lEPAmeDTNNBbVw6Xt4KAr6M4EFcgeV4lUREgJWHVZBu4fFc+OFivtuf5Q9jM/qSmAcQ3MdWtdOE6mVA==
   dependencies:
     "@testim/chrome-version" "^1.1.4"
     adm-zip "^0.6.0"
