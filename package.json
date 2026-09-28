@@ -16,7 +16,7 @@
     "wait-until": "node recipes/wait-until"
   },
   "devDependencies": {
-    "prettier": "^3.9.8"
+    "prettier": "^3.9.9"
   },
   "license": "MIT"
 }
