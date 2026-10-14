@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@cucumber/cucumber": "^13.3.0",
-    "selenium-webdriver": "^4.50.0"
+    "selenium-webdriver": "^4.51.0"
   },
   "private": true
 }
